@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <style>
-      
-    .testimonial-container {
+
+.bg-mountains {
+  background-image: url('./Capture.jpg'); /* Replace 'mountains.jpg' with your image file */
+}
+
+@media (min-width: 640px) {
+  .bg-mountains {
+    height: 80vh; /* Adjust as needed */
+  }
+}
+
+
+
+.testimonial-container {
         display: flex;
         overflow: hidden;
     }
@@ -34,6 +47,7 @@
       padding: 20px;
       text-align: center;
     }
+=
     .user-info .name {
       font-weight: bold;
       font-size: 18px;
@@ -49,6 +63,8 @@
     }
 
   </style>
+
+
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
@@ -57,6 +73,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
+    
    
 </head>
 <body>
@@ -103,25 +120,7 @@
         <img class="w-full h-full object-cover object-center absolute z-0" src="https://via.placeholder.com/500" alt="Placeholder Image">
       </div>
     </div>
-    <section class="text-gray-600 body-font" style="margin-left: 10%;">
-      <div class="container px-5 py-12 mx-auto">
-        <div class="flex justify-center items-center">
-          <div class="banner">
-            <div class="cta_content bg-gradient-to-r from-red-500 to-red-600 rounded-lg p-12 text-center w-4/5">
-              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Our 45-Minute Free IELTS Demo Offers</h1>
-              <p class="leading-relaxed text-base text-white">
-                Diagnostic test to assess your current level
-                Walkthrough of our IELTS training methodology
-                IELTS essay writing evaluation and feedback
-                Suitable IELTS course recommendation
-              </p>
-              <button class="inline-flex mt-6 text-white bg-blue-900 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Join Free Demo Class</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
+  
     
     
     
@@ -131,25 +130,25 @@
         <h2 class="text-3xl lg:text-4xl text-gray-900 font-medium title-font mb-2">Our Proven Outcomes</h2>
       </div>
       <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-blue-900">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-red-600">
           <h2 class="title-font font-medium text-4xl lg:text-5xl text-white">500+</h2>
           <p class="leading-relaxed text-lg lg:text-xl text-white">Students</p>
         </div>
       </div>
       <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-blue-900">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-red-600">
           <h2 class="title-font font-medium text-4xl lg:text-5xl text-white">7+</h2>
           <p class="leading-relaxed text-lg lg:text-xl text-white">IELTS Band Achievers</p>
         </div>
       </div>
       <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-blue-900">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-red-600">
           <h2 class="title-font font-medium text-4xl lg:text-5xl text-white">95%</h2>
           <p class="leading-relaxed text-lg lg:text-xl text-white">1st Attempt Success Rate</p>
         </div>
       </div>
       <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-blue-900">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-red-600">
           <h2 class="title-font font-medium text-4xl lg:text-5xl text-white">4.8</h2>
           <p class="leading-relaxed text-lg lg:text-xl text-white">Google Rating</p>
         </div>
@@ -193,7 +192,7 @@
         </div>
       </section>
       
-      <!--Message from the CEO-->  -->
+      <!--Message from the CEO-->  
       <div class="container px-5 py-8 mx-auto">
         <h1 class="text-3xl font-bold text-center mb-8">Message from the CEO</h1>
         <div class="flex flex-wrap items-center justify-center">
@@ -495,11 +494,11 @@
   </div>
   
     <!-- footer -->
-    <section class="text-gray-600 body-font" style="margin-left: 8%;">
+    <section class="text-gray-600 body-font" style="margin-left: 8%; width:90%;">
       <div class="container px-5 py-12 mx-auto ">
-        <div class="flex justify-center items-center">
+        <div class="flex justify-center items-center bg-red-500">
           <div class="banner">
-            <div class="cta_content bg-gradient-to-r from-red-500 to-red-600 rounded-lg p-12 text-center w-100">
+            <div class="cta_content bg-gradient-to-r from-red-500 to-red-500 rounded-lg p-12 text-center w-300">
               <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Ready to start your IELTS preparation with us?</h1>
               <p class="leading-relaxed text-base text-white">
                 We bring in the right resources, you carve out a better you!
@@ -510,44 +509,56 @@
         </div>
       </div>
     </section>
-    <div class="bg-gray-100">
-      <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-        <p class="text-sm text-gray-500 sm:ml-auto sm:mt-0 mt-4">
-          Contact: <a href="tel:+9779802335996" class="text-gray-600 hover:text-gray-800">+977 9802335996</a> <br>
-          Email: <a href="mailto:info@onlineclassnepal.com.np" class="text-gray-600 hover:text-gray-800">info@onlineclassnepal.com.np</a>
-        </p>
-        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-          <a href="https://www.facebook.com/onlineieltsnp" class="text-gray-500" target="_blank" rel="noopener noreferrer">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-            </svg>
-          </a>
-          <a href="https://www.instagram.com/online_ielts_nepal/" class="ml-3 text-gray-500" target="_blank" rel="noopener noreferrer">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/company/online-ielts-pte-nepal/?viewAsMember=true" class="ml-3 text-gray-500" target="_blank" rel="noopener noreferrer">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-            </svg>
-          </a>
-          <a href="#" class="ml-3 text-gray-500" target="_blank" rel="noopener noreferrer">
-            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
-            </svg>
-          </a>
-        </span>
+    
+    <div class="bg-mountains bg-cover bg-center h-64">
+      <div class="bg-black bg-opacity-50 h-full">
+        <div class="container mx-auto py-12 text-white">
+          <div class="flex justify-center items-center">
+            <div class="p-4">
+              <p class="text-lg text-gray-900">
+                Contact: <a href="tel:+9779802335996" class="text-black hover:text-white">+977 9802335996</a> <br>
+                Email: <a href="mailto:info@onlineclassnepal.com.np" class="text-black hover:text-white">info@onlineclassnepal.com.np</a>
+              </p>
+            </div>
+            <div class="flex p-4">
+              <a href="https://www.facebook.com/onlineieltsnp" class="text-black hover:text-white" target="_blank" rel="noopener noreferrer">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/online_ielts_nepal/" class="ml-4 text-black hover:text-white" target="_blank" rel="noopener noreferrer">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/company/online-ielts-pte-nepal/?viewAsMember=true" class="ml-4 text-black hover:text-white" target="_blank" rel="noopener noreferrer">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a href="#" class="ml-4 text-black hover:text-white" target="_blank" rel="noopener noreferrer">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-8 h-8" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container mx-auto py-12">
+    
+    
+    
+    
+    
      
       
       <!-- Include Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+<script src="https://cdn.tailwindcss.com"></script>
 <script>
   const swiper = new Swiper('.swiper-container', {
     autoplay: {
