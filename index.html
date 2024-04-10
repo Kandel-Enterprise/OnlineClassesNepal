@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      <style>
+    .testimonial-container {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .testimonial-slide {
+        flex: 0 0 20%; /* Display 5 slides in a row */
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .testimonial-slide img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%; /* For rounded images */
+    }
+
+    .testimonial-slide.active {
+        opacity: 1;
+    }
+</style>
+  </style>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
    
 </head>
 <body>
@@ -13,110 +43,105 @@
       <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
           <img src="Assets/Logo/Online Classes Nepal Logo.png" alt="Online Classes Nepal Logo" style="max-height: 80px;">
-          <span class="ml-3 text-xl">Online Classes Nepal</span>
+          <span class="ml-3 text-xl">Online Class Nepal</span>
         </a>
         <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
           <!-- Place for Navigation Section -->
         </nav>
 
-        <button class="inline-flex items-center bg-blue-900 border-0 py-1 px-3 focus:outline-none hover:bg-red-500 rounded text-base mt-4 md:mt-0 text-white">Button
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </button>
+        <button class="inline-flex items-center bg-blue-900 border-0 py-1 px-3 focus:outline-none hover:bg-red-500 rounded text-base mt-4 md:mt-0 text-white">CALL:9802336996
+</button>
       </div>
     </header>
-    <section class="text-white body-font bg-blue-900" >
-      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Ultimate Online IELTS  
-            
-            <br class="hidden lg:inline-block margin-top-30">PTE coaching for achieving a 7+ IELTS band
-          </h1>
-         
-          <div class="flex justify-center margin-top-30" style="margin-top: 50px;">
-            <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg"><a href="">Join Free Demo Class</a></button>
-            <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
-            
+    <div class="bg-blue-900 container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <!-- Left Section -->
+      <div class="text-white lg:w-1/2 lg:flex-grow md:w-full lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-5xl text-4xl mb-6 font-medium"> <!-- Increased text size here -->
+          Ultimate Online IELTS | PTE coaching for achieving a
+          <br class="hidden lg:inline-block margin-top-30">7+ IELTS band
+        </h1>
+        <!-- Points List -->
+        <ul class="text-lg"> <!-- Increased text size here -->
+          <li>Excellent Result</li>
+          <li>Recorded Video</li>
+          <li>Unlimited Mock Tests</li>
+          <li>Early Morning and Late evening classes</li>
+          <li>Lifetime Resources</li>
+          <li>Free Counseling Service and Exam Date Booking Services</li>
+          <li>Certified Instructors</li>
+        </ul>
+        <!-- Buttons -->
+        <div class="flex justify-center margin-top-30" style="margin-top: 50px;">
+          <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg"><a href="#">Join Free Demo Class</a></button>
+          <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
         </div>
-        
-    </section>
-
-    <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
-          <h1 class="text-3xl font-bold text-center mb-8">Why Us</h1>
-          <div class="flex justify-between">
-              <div class="circle bg-blue-900 rounded-full w-40 h-40 flex-shrink-0 flex items-center justify-center text-white">
-                  <span>Free Recorded Video</span>
-              </div>
-              <div class="circle bg-blue-900 rounded-full w-40 h-40 flex-shrink-0 flex items-center justify-center text-white">
-                  <span>Unlimited Mock Test</span>
-              </div>
-              <div class="circle bg-blue-900 rounded-full w-40 h-40 flex-shrink-0 flex items-center justify-center text-white">
-                  <span>Time Flexibility</span>
-              </div>
-              <div class="circle bg-blue-900 rounded-full w-40 h-40 flex-shrink-0 flex items-center justify-center text-white">
-                  <span>Excellent Online Resources</span>
-              </div>
-              <div class="circle bg-blue-900 rounded-full w-40 h-40 flex-shrink-0 flex items-center justify-center text-white man">
-                  <span>Free Counseling Services</span>
-              </div>
-              <div class="circle bg-blue-900 rounded-full w-40 h-40 flex-shrink-0 flex items-center justify-center text-white">
-                  <span>Free Exam Date Booking</span>
-              </div>
-              <div class="circle bg-blue-900 rounded-full w-40 h-40 flex-shrink-0 flex items-center justify-center text-white">
-                  <span>Certified Instructors</span>
-              </div>
+      </div>
+      <!-- Right Section -->
+      <div class="md:w-1/2 lg:h-screen h-60 md:h-auto relative">
+        <!-- Placeholder Image -->
+        <img class="w-full h-full object-cover object-center absolute z-0" src="https://via.placeholder.com/500" alt="Placeholder Image">
+      </div>
+    </div>
+    <section class="text-gray-600 body-font" style="margin-left: 10%;">
+      <div class="container px-5 py-12 mx-auto">
+        <div class="flex justify-center items-center">
+          <div class="banner">
+            <div class="cta_content bg-gradient-to-r from-red-500 to-red-600 rounded-lg p-12 text-center w-4/5">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Our 45-Minute Free IELTS Demo Offers</h1>
+              <p class="leading-relaxed text-base text-white">
+                Diagnostic test to assess your current level
+                Walkthrough of our IELTS training methodology
+                IELTS essay writing evaluation and feedback
+                Suitable IELTS course recommendation
+              </p>
+              <button class="inline-flex mt-6 text-white bg-blue-900 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Join Free Demo Class</button>
+            </div>
           </div>
+        </div>
       </div>
     </section>
     
     
     
-      <section class="text-gray-600 body-font "  .item="archeve" >
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our 45-Minute Free IELTS Demo Offers</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Diagnostic test to assess your current level
-              
-<br>Walkthrough of our IELTS training methodolgy
-<br>IELTS essay writing evaluation and feedback
-<br>Suitable IELTS course recommendation
-
-              </p>
-          </div>
-          <div class="flex flex-wrap -m-4 text-center ">
-            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-red-600" >
-                
-                <h2 class="title-font font-medium text-3xl text-white">500+</h2>
-                <p class="leading-relaxed text-white">Students</p>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-red-600">
-               
-                <h2 class="title-font font-medium text-3xl text-white">7+</h2>
-                <p class="leading-relaxed text-white">IETS Band Archivers</p>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-red-600">
-                
-                <h2 class="title-font font-medium text-3xl text-white">10+</h2>
-                <p class="leading-relaxed text-white">Certified Teachers</p>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-red-600">
-                
-                <h2 class="title-font font-medium text-3xl text-white ">100+</h2>
-                <p class="leading-relaxed text-white">Mock Test</p>
-              </div>
-            </div>
-          </div>
+    
+    
+    <div class="flex flex-wrap -m-4 text-center">
+      <div class="w-full mb-8">
+        <h2 class="text-3xl lg:text-4xl text-gray-900 font-medium title-font mb-2">Our Proven Outcomes</h2>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-blue-900">
+          <h2 class="title-font font-medium text-4xl lg:text-5xl text-white">500+</h2>
+          <p class="leading-relaxed text-lg lg:text-xl text-white">Students</p>
         </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-blue-900">
+          <h2 class="title-font font-medium text-4xl lg:text-5xl text-white">7+</h2>
+          <p class="leading-relaxed text-lg lg:text-xl text-white">IELTS Band Achievers</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-blue-900">
+          <h2 class="title-font font-medium text-4xl lg:text-5xl text-white">95%</h2>
+          <p class="leading-relaxed text-lg lg:text-xl text-white">1st Attempt Success Rate</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-blue-900">
+          <h2 class="title-font font-medium text-4xl lg:text-5xl text-white">4.8</h2>
+          <p class="leading-relaxed text-lg lg:text-xl text-white">Google Rating</p>
+        </div>
+      </div>
+    </div>
+    
+    
+      
+          </div>
+
+          
+          
+          
       </section>
       <section class="text-gray-600 body-font" .item="about-us">
         <div class="container px-5 py-24 mx-auto">
@@ -158,21 +183,29 @@
       <!--Message from the CEO-->  -->
       <div class="container px-5 py-8 mx-auto">
         <h1 class="text-3xl font-bold text-center mb-8">Message from the CEO</h1>
-        <div class="py-8">
-            <p class="text-lg text-gray-600 leading-relaxed">
+        <div class="flex flex-wrap items-center justify-center">
+          <!-- Left Part (Image) -->
+          <div class="w-full md:w-1/2 animate__animated animate__slideInLeft">
+            <img class="object-cover object-center rounded-lg" src="your-image-url.jpg" alt="Image">
+          </div>
+          <!-- Right Part (Content) -->
+          <div class="w-full md:w-1/2 animate__animated animate__slideInRight">
+            <div class="p-6">
+              <p class="text-lg text-gray-600 leading-relaxed">
                 Dear Students,
-            </p>
-            <p class="text-lg text-gray-600 leading-relaxed">
+              </p>
+              <p class="text-lg text-gray-600 leading-relaxed">
                 Welcome to Online Class Nepal! I'm delighted to lead a dedicated and expert team who are committed to your success. With our flexible class timings, including early morning and evening sessions, along with unlimited mock tests and free recorded videos, you'll have the freedom to learn at your own pace. Our certified instructors and excellent online resources ensure that you receive top-notch guidance and support throughout your IELTS preparation journey. Let's work together to achieve your goals and unlock a world of opportunities!
-            </p>
-            <p class="text-lg text-gray-600 leading-relaxed">
+              </p>
+              <p class="text-lg text-gray-600 leading-relaxed">
                 Warm regards,<br>
                 Santosh Magar<br>
                 CEO, Online Class Nepal
-            </p>
+              </p>
+            </div>
+          </div>
         </div>
     </div>
-
     <!--Message from the CEO-->
 
    
@@ -181,187 +214,209 @@
     
   
 
-        
-    <!-- Testimonial  -->
-
-    <div class="container mx-auto py-12">
-      <h1 class="text-3xl font-semibold text-center mb-8">Our Students</h1>
-    
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <!-- Testimonial 1 -->
-          <div class="swiper-slide">
-            <img class="w-50 h-24 rounded-full  mr-6"
-             src="https://via.placeholder.com/150" alt="testimonial">
-            <p class="text-gray-700 text-base leading-relaxed mb-4">Scoring a 7 was quite a challenge for me, especially since I had studied in Nepali medium. However, thanks to the support and guidance from Online Class Nepal, along with their flexible scheduling, comprehensive study materials, and personalized assistance throughout each section, the journey became more manageable. Additionally, the frequent mock tests provided invaluable practice opportunities.</p>
-            <p class="text-gray-900 font-semibold mb-1">Sarju Katuwal</p>
-            <p class="text-gray-700 mb-1">Band Score: 7</p>
+  <!--<div>
+          
+  Testimonial  --> <!--
+    <!--<div class="container mx-auto py-12">
+        <h1 class="text-3xl font-semibold text-center mb-8">Our Students</h1>
+      
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Testimonial 1 -->
+            <!-- <div class="swiper-slide">
+              <img class="w-50 h-24 rounded-full  mr-6"
+               src="https://via.placeholder.com/150" alt="testimonial">
+             
+              <p class="text-gray-900 font-semibold mb-1">Sarju Katuwal</p>
+              <p class="text-gray-700 mb-1">Band Score: 7</p>
+            </div>
+      
+            <!-- Testimonial 2 -->
+             <!--<div class="swiper-slide">
+              <img class="w-50 h-24 rounded-full max-w-100 mb-4" src="https://via.placeholder.com/150" alt="testimonial">
+              
+              <p class="text-gray-900 font-semibold mb-1">Ranju Aryal</p>
+              <p class="text-gray-700 mb-1">Band Score: 7.5</p>
+            </div>
+      
+            <!-- Testimonial 3 -->
+             <!--<div class="swiper-slide">
+              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
+             
+              <p class="text-gray-900 font-semibold mb-1">Alex Shrestha</p>
+              <p class="text-gray-700 mb-1">Band Score: 7.5</p>
+            </div>
+      
+            <!-- Testimonial 4 -->
+            <!-- <div class="swiper-slide">
+              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
+              
+              <p class="text-gray-900 font-semibold mb-1">Esther Magar</p>
+              <p class="text-gray-700 mb-1">Band Score: 7</p>
+            </div>
+      
+            <!-- Testimonial 5 -->
+             <!--<div class="swiper-slide">
+              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
+             
+              <p class="text-gray-900 font-semibold mb-1">Aakash Kunwar</p>
+              <p class="text-gray-700 mb-1">Band Score: 8</p>
+            </div>
+      
+            <!-- Testimonial 6 -->
+             <!--<div class="swiper-slide">
+              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
+             
+              <p class="text-gray-900 font-semibold mb-1">Sujit Maharjan</p>
+              <p class="text-gray-700 mb-1">Band Score: 8</p>
+            </div>
+      
+            <!-- Testimonial 7 -->
+             <!--<div class="swiper-slide">
+              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
+              
+              <p class="text-gray-900 font-semibold mb-1">Swagat Regmi</p>
+              <p class="text-gray-700 mb-1">Band Score: 7.5</p>
+            </div>
+      
+            <!-- Testimonial 8 -->
+             <!--<div class="swiper-slide">
+              <div class="swiper-slide">
+              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
+            
+              <p class="text-gray-900 font-semibold mb-1">Arpan KC</p>
+              <p class="text-gray-700 mb-1">Band Score: 7.5</p>
+            </div>
+      
+            <!-- Testimonial 9 -->
+            <!--<div class="swiper-slide">
+              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
+             
+              <p class="text-gray-700 mb-1">Band Score: 7.5</p>
+            </div>
+      
+            <!-- Testimonial 10 -->
+            <!--<div class="swiper-slide">
+              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
+             
+              <p class="text-gray-900 font-semibold mb-1">Sajisa Neupane</p>
+              <p class="text-gray-700 mb-1">Band Score: 7.5</p>
+            </div>
+      
+            <!-- Testimonial 11 -->
+           <!-- <div class="swiper-slide">
+              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
+             
+              <p class="text-gray-900 font-semibold mb-1">Sarjit Pandey</p>
+              <p class="text-gray-700 mb-1">Band Score: 7.5</p>
+            </div>
+      
+          -->
+        <!--<div class="swiper-slide">
+              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
+            
+              <p class="text-gray-900 font-semibold mb-1">Pranil Maharjan</p>
+              <p class="text-gray-700 mb-1">Band Score: 7.5</p>
+            </div>-->
+      
           </div>
-    
-          <!-- Testimonial 2 -->
-          <div class="swiper-slide">
-            <img class="w-50 h-24 rounded-full max-w-100 mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-            <p class="text-gray-700 text-base leading-relaxed mb-4">Thanks to Online Class Nepal, I achieved a Band 7.5 in my IELTS exam! Their unlimited mock tests and recorded videos were a huge help, especially when I couldn't attend live sessions. The teacher was brilliant and guided me through the writing section as I found writing tasks a bit difficult. I'm grateful for their support in my success.</p>
-            <p class="text-gray-900 font-semibold mb-1">Ranju Aryal</p>
-            <p class="text-gray-700 mb-1">Band Score: 7.5</p>
-          </div>
-    
-          <!-- Testimonial 3 -->
-          <div class="swiper-slide">
-            <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-            <p class="text-gray-700 text-base leading-relaxed mb-4">Online Class Nepal has been instrumental in my success in achieving a score of 7.5 in the IELTS examination. The weekly mock tests boosted my confidence. Each mock test provided me with valuable practice and insights into the exam format, allowing me to refine my skills and overcome any weaknesses. Additionally, the availability of both online and physical reading materials proved to be immensely beneficial in my preparation journey.</p>
-            <p class="text-gray-900 font-semibold mb-1">Alex Shrestha</p>
-            <p class="text-gray-700 mb-1">Band Score: 7.5</p>
-          </div>
-    
-          <!-- Testimonial 4 -->
-          <div class="swiper-slide">
-            <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-            <p class="text-gray-700 text-base leading-relaxed mb-4">Reaching a band score of 7 was a huge achievement for me, and it's all thanks to their amazing teaching style. They really focus on each student and provide personalized guidance. Even when I missed classes, the instructor kept recorded videos, so I never felt left behind. I highly recommend this class.</p>
-            <p class="text-gray-900 font-semibold mb-1">Esther Magar</p>
-            <p class="text-gray-700 mb-1">Band Score: 7</p>
-          </div>
-    
-          <!-- Testimonial 5 -->
-          <div class="swiper-slide">
-            <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-            <p class="text-gray-700 text-base leading-relaxed mb-4">I never imagined I'd achieve a band score of 8, but thanks to Santosh sir's teaching style, it became possible. He focuses on all students, teaches in a friendly manner, and guides us through difficult problems, ensuring everyone excels in the IELTS exam. Plus, the unlimited mock tests prepared me thoroughly. I'm grateful for their support.</p>
-            <p class="text-gray-900 font-semibold mb-1">Aakash Kunwar</p>
-            <p class="text-gray-700 mb-1">Band Score: 8</p>
-          </div>
-    
-          <!-- Testimonial 6 -->
-          <div class="swiper-slide">
-            <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-            <p class="text-gray-700 text-base leading-relaxed mb-4">Thanks to Online Class Nepal, I achieved an incredible band score of 8 in the IELTS exam! Honestly, I never thought I could reach this level, but their amazing online study materials and personalized guidance from the instructor made it possible. I'm really grateful to them for helping me succeed.</p>
-            <p class="text-gray-900 font-semibold mb-1">Sujit Maharjan</p>
-            <p class="text-gray-700 mb-1">Band Score: 8</p>
-          </div>
-    
-          <!-- Testimonial 7 -->
-          <div class="swiper-slide">
-            <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-            <p class="text-gray-700 text-base leading-relaxed mb-4">Thanks to Online Class Nepal, achieving a score of 7.5 in my IELTS exam became a reality! Their exam booking service, coupled with the convenience of the exam book dating, made the entire process hassle-free. Additionally, the personalized guidance provided by my instructor played a crucial role in my success. I am grateful to Online Class Nepal for their exceptional services and dedicated assistance throughout my preparation journey!</p>
-            <p class="text-gray-900 font-semibold mb-1">Swagat Regmi</p>
-            <p class="text-gray-700 mb-1">Band Score: 7.5</p>
-          </div>
-    
-          <!-- Testimonial 8 -->
-          <div class="swiper-slide">
-            <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-            <p class="text-gray-700 text-base leading-relaxed mb-4">With the assistance of Online Class Nepal, I achieved a score of 7.5.  Despite struggling with weak writing skills, Santosh sir provided continuous guidance throughout the sessions. Through group division and speaking practice sessions, I was able to improve significantly and attain a score of 7.5</p>
-            <p class="text-gray-900 font-semibold mb-1">Arpan KC</p>
-            <p class="text-gray-700 mb-1">Band Score: 7.5</p>
-          </div>
-    
-          <!-- Testimonial 9 -->
-          <div class="swiper-slide">
-            <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-            <p class="text-gray-700 text-base leading-relaxed mb-4">I obtained a 7.5 score through Online Class Nepal. Despite initial doubt, I participated in their demo class and admired the instructor's teaching method. Subsequently, I received outstanding support that contributed to my 7.5 score. The availability of unlimited mock tests and personalized speaking session guidance were particularly beneficial in my achievement</p>
-            <p class="text-gray-900 font-semibold mb-1">Arnab Singh</p>
-            <p class="text-gray-700 mb-1">Band Score: 7.5</p>
-          </div>
-    
-          <!-- Testimonial 10 -->
-          <div class="swiper-slide">
-            <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-            <p class="text-gray-700 text-base leading-relaxed mb-4">I obtained a 7.5 score through Online Class Nepal. Despite initial doubt, I participated in their demo class and admired the instructor's teaching method. Subsequently, I received outstanding support that contributed to my 7.5 score. The availability of unlimited mock tests and personalized speaking session guidance were particularly beneficial in my achievement</p>
-            <p class="text-gray-900 font-semibold mb-1">Sajisa Neupane</p>
-            <p class="text-gray-700 mb-1">Band Score: 7.5</p>
-          </div>
-    
-          <!-- Testimonial 11 -->
-          <div class="swiper-slide">
-            <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-            <p class="text-gray-700 text-base leading-relaxed mb-4">I obtained a 7.5 score through Online Class Nepal. Despite initial doubt, I participated in their demo class and admired the instructor's teaching method. Subsequently, I received outstanding support that contributed to my 7.5 score. The availability of unlimited mock tests and personalized speaking session guidance were particularly beneficial in my achievement</p>
-            <p class="text-gray-900 font-semibold mb-1">Sarjit Pandey</p>
-            <p class="text-gray-700 mb-1">Band Score: 7.5</p>
-          </div>
-    
-          <!-- Testimonial 12 -->
-          <div class="swiper-slide">
-            <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-            <p class="text-gray-700 text-base leading-relaxed mb-4">I obtained a 7.5 score through Online Class Nepal. Despite initial doubt, I participated in their demo class and admired the instructor's teaching method. Subsequently, I received outstanding support that contributed to my 7.5 score. The availability of unlimited mock tests and personalized speaking session guidance were particularly beneficial in my achievement</p>
-            <p class="text-gray-900 font-semibold mb-1">Pranil Maharjan</p>
-            <p class="text-gray-700 mb-1">Band Score: 7.5</p>
-          </div>
-    
+          <!--Add Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
       </div>
-    </div>
-    
+      
+</div> 
 
     
     
-    <!-- REview -->
+    
 
     <div class="container mx-auto py-12">
       <h1 class="text-3xl font-semibold text-center mb-8">Review</h1>
-    
+  
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Testimonial 1 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-          <div class="p-6">
-            <img src="https://via.placeholder.com/150" alt="testimonial" class="w-16 h-16 rounded-full mb-4 mx-auto">
-            <p class="text-gray-700 text-base leading-relaxed mb-4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            <h2 class="text-lg font-semibold text-gray-900 mb-1">John Doe</h2>
-            <p class="text-gray-600 text-sm">CEO, Company ABC</p>
+          <!-- Testimonial 1 -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+              <div class="p-6">
+                  <img src="https://via.placeholder.com/150" alt="testimonial" class="w-16 h-16 rounded-full mb-4 mx-auto">
+                  <p class="text-gray-700 text-base leading-relaxed mb-4">Scoring a 7 was quite a challenge for me, especially since I had studied in Nepali medium. However, thanks to the support and guidance from Online Class Nepal, along with their flexible scheduling, comprehensive study materials, and personalized assistance throughout each section, the journey became more manageable. Additionally, the frequent mock tests provided invaluable practice opportunities.</p>
+                  <h2 class="text-lg font-semibold text-gray-900 mb-1">Sarju Katuwal</h2>
+                  <p class="text-gray-600 text-sm">Band Score: 7</p>
+              </div>
           </div>
-        </div>
-    
-        <!-- Testimonial 2 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-          <div class="p-6">
-            <img src="https://via.placeholder.com/150" alt="testimonial" class="w-16 h-16 rounded-full mb-4 mx-auto">
-            <p class="text-gray-700 text-base leading-relaxed mb-4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            <h2 class="text-lg font-semibold text-gray-900 mb-1">Jane Smith</h2>
-            <p class="text-gray-600 text-sm">Marketing Manager, Company XYZ</p>
+  
+          <!-- Testimonial 2 -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+              <div class="p-6">
+                  <img src="https://via.placeholder.com/150" alt="testimonial" class="w-16 h-16 rounded-full mb-4 mx-auto">
+                  <p class="text-gray-700 text-base leading-relaxed mb-4">Thanks to Online Class Nepal, I achieved a Band 7.5 in my IELTS exam! Their unlimited mock tests and recorded videos were a huge help, especially when I couldn't attend live sessions. The teacher was brilliant and guided me through the writing section as I found writing tasks a bit difficult. I'm grateful for their support in my success. Definitely Online Class Nepal.</p>
+                  <h2 class="text-lg font-semibold text-gray-900 mb-1">Alex Shrestha</h2>
+                  <p class="text-gray-600 text-sm">Band Score: 7.5</p>
+              </div>
           </div>
-        </div>
-    
-        <!-- Testimonial 3 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-          <div class="p-6">
-            <img src="https://via.placeholder.com/150" alt="testimonial" class="w-16 h-16 rounded-full mb-4 mx-auto">
-            <p class="text-gray-700 text-base leading-relaxed mb-4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            <h2 class="text-lg font-semibold text-gray-900 mb-1">Michael Johnson</h2>
-            <p class="text-gray-600 text-sm">CTO, Tech Corp</p>
+  
+          <!-- Testimonial 3 -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+              <div class="p-6">
+                  <img src="https://via.placeholder.com/150" alt="testimonial" class="w-16 h-16 rounded-full mb-4 mx-auto">
+                  <p class="text-gray-700 text-base leading-relaxed mb-4">Online Class Nepal has been instrumental in my success in achieving a score of 7.5 in the IELTS examination. The weekly mock tests boosted my confidence. Each mock test provided me with valuable practice and insights into the exam format, allowing me to refine my skills and overcome any weaknesses. Additionally, the availability of both online and physical reading materials proved to be immensely beneficial in my preparation journey.</p>
+                  <h2 class="text-lg font-semibold text-gray-900 mb-1">Aakash Kunwar</h2>
+                  <p class="text-gray-600 text-sm">Band Score: 7.5</p>
+              </div>
           </div>
-        </div>
-    
-        <!-- Testimonial 4 -->
-        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-          <div class="p-6">
-            <img src="https://via.placeholder.com/150" alt="testimonial" class="w-16 h-16 rounded-full mb-4 mx-auto">
-            <p class="text-gray-700 text-base leading-relaxed mb-4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            <h2 class="text-lg font-semibold text-gray-900 mb-1">Emily Rogers</h2>
-            <p class="text-gray-600 text-sm">Designer, Design Co.</p>
+  
+          <!-- Testimonial 4 -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+              <div class="p-6">
+                  <img src="https://via.placeholder.com/150" alt="testimonial" class="w-16 h-16 rounded-full mb-4 mx-auto">
+                  <p class="text-gray-700 text-base leading-relaxed mb-4">I never imagined I'd achieve a band score of 8, but thanks to Santosh sir's teaching style, it became possible. He focuses on all students, teaches in a friendly manner, and guides us through difficult problems, ensuring everyone excels in the IELTS exam. Plus, the unlimited mock tests prepared me thoroughly. I'm grateful for their support.</p>
+                  <h2 class="text-lg font-semibold text-gray-900 mb-1">Swagat Regmi</h2>
+                  <p class="text-gray-600 text-sm">Band Score: 8</p>
+              </div>
           </div>
-        </div>
+  
+          <!-- Testimonial 5 -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+              <div class="p-6">
+                  <img src="https://via.placeholder.com/150" alt="testimonial" class="w-16 h-16 rounded-full mb-4 mx-auto">
+                  <p class="text-gray-700 text-base leading-relaxed mb-4">Thanks to Online Class Nepal, achieving a score of 7.5 in my IELTS exam became a reality! Their exam booking service, coupled with the convenience of the exam book dating, made the entire process hassle-free. Additionally, the personalized guidance provided by my instructor played a crucial role in my success. I am grateful to Online Class Nepal for their exceptional services and dedicated assistance throughout my preparation journey!</p>
+                  <h2 class="text-lg font-semibold text-gray-900 mb-1">Arnab Singh</h2>
+                  <p class="text-gray-600 text-sm">Band Score: 7.5</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <!--youtube-->
 
-        <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-          <div class="p-6">
-            <img src="https://via.placeholder.com/150" alt="testimonial" class="w-16 h-16 rounded-full mb-4 mx-auto">
-            <p class="text-gray-700 text-base leading-relaxed mb-4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            <h2 class="text-lg font-semibold text-gray-900 mb-1">David Brown</h2>
-            <p class="text-gray-600 text-sm">Product Manager, Product Co.</p>
-          </div>
-        </div>
+  <div class="flex justify-center items-center h-screen" style="margin-left: 10%">
+    <div class="container px-5 py-6 mx-auto">
+      <h1 class="text-7xl text-gray-900 font-medium title-font mb-2 md:mb-0">What do our International Students say?</h1>
+      <div
+      class="h-10"></div>
+      <div class="mr-4
+       inline-flex items-center" style="width: 80vw">
+        <iframe width="100%" height="700" src="https://www.youtube.com/embed/LeYMumhIeBo" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
-
+  </div>
+  
     <!-- footer -->
-    <div class="flex justify-center items-center h-screen " style="margin-left:25%">
-      <div class="container px-5 py-6 mx-auto">
-        <h2 class="text-gray-900 font-medium title-font mb-2 md:mb-0">What do our International Students say?</h2>
-        <div class="ml-4 inline-flex items-center">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/LeYMumhIeBo" frameborder="0" allowfullscreen></iframe>
+    <section class="text-gray-600 body-font" style="margin-left: 8%;">
+      <div class="container px-5 py-12 mx-auto ">
+        <div class="flex justify-center items-center">
+          <div class="banner">
+            <div class="cta_content bg-gradient-to-r from-red-500 to-red-600 rounded-lg p-12 text-center w-100">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Ready to start your IELTS preparation with us?</h1>
+              <p class="leading-relaxed text-base text-white">
+                We bring in the right resources, you carve out a better you!
+              </p>
+              <button class="inline-flex mt-6 text-white bg-blue-900 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Join Free Demo Class</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    
+    </section>
     <div class="bg-gray-100">
       <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
         <p class="text-sm text-gray-500 sm:ml-auto sm:mt-0 mt-4">
@@ -394,10 +449,8 @@
         </span>
       </div>
     </div>
-    
-
-
-  
+    <div class="container mx-auto py-12">
+     
       
       <!-- Include Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
