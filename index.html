@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      <style>
+      
     .testimonial-container {
         display: flex;
         overflow: hidden;
@@ -24,14 +24,35 @@
     }
 
     .testimonial-slide.active {
-        opacity: 1;
+        opacity: 1;}
+
+    /* Custom styles */
+    .user-info {
+      border: 2px solid #3b82f6; /* Blue border */
+      border-radius: 10px;
+      margin: 10px; /* Margin between users */
+      padding: 20px;
+      text-align: center;
     }
-</style>
+    .user-info .name {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .user-info .band {
+      font-size: 16px;
+    }
+    .user-info img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;    
+    }
+
   </style>
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.7/dist/css/splide.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -143,12 +164,12 @@
           
           
       </section>
-      <section class="text-gray-600 body-font" .item="about-us">
+      <section class="text-white body-font bg-blue-900" .item="about-us">
         <div class="container px-5 py-24 mx-auto">
           <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Welcome to Online Class Nepal – Your Gateway to Success in IELTS and PTE!
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-red-600">Welcome to Online Class Nepal – Your Gateway to Success in IELTS and PTE!
             </h1>
-            <div class="text-gray-600 body-font ">
+            <div class="text-white body-font ">
               <div class="container px-5 py-24 mx-auto">
                   <p class="leading-relaxed text-lg font-bold ">
                       Are you a dedicated professional striving for excellence in your career, yet finding it challenging to commit to traditional classroom settings? Do you face time constraints that hinder your ability to pursue language proficiency courses? Look no further – Online Class Nepal is tailored to meet the needs of ambitious individuals like you, providing unparalleled convenience and flexibility in mastering IELTS and PTE.
@@ -159,16 +180,8 @@
                   <p class="leading-relaxed text-lg font-bold">
                       Our platform is specifically designed for busy job holders and individuals struggling to allocate time for physical classes. At Online Class Nepal, we recognize the importance of accommodating diverse schedules, and that's why our classes are not bound by rigid timeframes. With sessions available during the early morning (6 - 8 am) and evening (7 - 10 pm), you can seamlessly integrate language proficiency learning into your daily routine, ensuring that your professional commitments remain unaffected.
                   </p>
-                  <h3 class="text-lg font-medium text-gray-900 mt-10 mb-4">What sets us apart (USPs):</h3>
-                  <ul class="pl-6 list-none">
-                    <li class="text-gray-600">Excellent Result</li>
-                    <li class="text-gray-600">Recorded Video</li>
-                    <li class="text-gray-600">Unlimited Mock Tests</li>
-                    <li class="text-gray-600">Early Morning and Late evening classes</li>
-                    <li class="text-gray-600">Lifetime Resources</li>
-                    <li class="text-gray-600">Free Counseling Service and Exam Date Booking Services</li>
-                    <li class="text-gray-600">Certified Instructors</li>
-                </ul>
+                 
+                 
                 
                 <p class="leading-relaxed text-lg mt-6 font-bold">
                   Embark on your language proficiency journey with Online Class Nepal, where success is not just a destination but a fulfilling and flexible learning experience tailored to your unique schedule and aspirations. Join us and redefine the way you approach IELTS and PTE classes online!
@@ -210,122 +223,202 @@
 
    
     
-   
-    
+    <div class="bg-gray-100 max-w-8xl mx-auto px-4 py-8">
+
+      <div class="splide" id="user-slider">
+          <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Sarju Katuwal" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Sarju Katuwal</div>
+                              <div class="text-gray-600">Band: 7</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Ranju Aryal" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Ranju Aryal</div>
+                              <div class="text-gray-600">Band: 7</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Alex Shrestha" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Alex Shrestha</div>
+                              <div class="text-gray-600">Band: 7.5</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Esther Magar" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Esther Magar</div>
+                              <div class="text-gray-600">Band: 7</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Aakash Kunwar" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Aakash Kunwar</div>
+                              <div class="text-gray-600">Band: 7.5</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Sujit Maharjan" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Sujit Maharjan</div>
+                              <div class="text-gray-600">Band: 7.5</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Swagat Regmi" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Swagat Regmi</div>
+                              <div class="text-gray-600">Band: 8</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Arpan KC" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Arpan KC</div>
+                              <div class="text-gray-600">Band: 8</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Arnab Singh" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Arnab Singh</div>
+                              <div class="text-gray-600">Band: 7.5</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Sajisa Neupane" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Sajisa Neupane</div>
+                              <div class="text-gray-600">Band: 7.5</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Sarjit Pandey" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Sarjit Pandey</div>
+                              <div class="text-gray-600">Band: 7.5</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Pranil Maharjan" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Pranil Maharjan</div>
+                              <div class="text-gray-600">Band: 7.5</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Pramish Shrestha" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Pramish Shrestha</div>
+                              <div class="text-gray-600">Band: 7</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Prahar Lamsal" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Prahar Lamsal</div>
+                              <div class="text-gray-600">Band: 7</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Bibita Raj Joshi" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Bibita Raj Joshi</div>
+                              <div class="text-gray-600">Band: 7</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Sugriv Khadka" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Sugriv Khadka</div>
+                              <div class="text-gray-600">Band: 7</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Helen Shrestha" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Helen Shrestha</div>
+                              <div class="text-gray-600">Band: 7</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="RB" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">RB</div>
+                              <div class="text-gray-600">Band: 7.5</div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide">
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://via.placeholder.com/100" alt="Hemani Bhatt" class="mx-auto rounded-full">
+                          <div class="mt-4">
+                              <div class="font-bold text-lg">Hemani Bhatt</div>
+                              <div class="text-gray-600">Band: 7</div>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.7/dist/js/splide.min.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          new Splide('#user-slider', {
+              type: 'loop',
+              perPage: 4,
+              autoplay: true,
+          }).mount();
+      });
+  </script>
   
 
-  <!--<div>
-          
-  Testimonial  --> <!--
-    <!--<div class="container mx-auto py-12">
-        <h1 class="text-3xl font-semibold text-center mb-8">Our Students</h1>
-      
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <!-- Testimonial 1 -->
-            <!-- <div class="swiper-slide">
-              <img class="w-50 h-24 rounded-full  mr-6"
-               src="https://via.placeholder.com/150" alt="testimonial">
-             
-              <p class="text-gray-900 font-semibold mb-1">Sarju Katuwal</p>
-              <p class="text-gray-700 mb-1">Band Score: 7</p>
-            </div>
-      
-            <!-- Testimonial 2 -->
-             <!--<div class="swiper-slide">
-              <img class="w-50 h-24 rounded-full max-w-100 mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-              
-              <p class="text-gray-900 font-semibold mb-1">Ranju Aryal</p>
-              <p class="text-gray-700 mb-1">Band Score: 7.5</p>
-            </div>
-      
-            <!-- Testimonial 3 -->
-             <!--<div class="swiper-slide">
-              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-             
-              <p class="text-gray-900 font-semibold mb-1">Alex Shrestha</p>
-              <p class="text-gray-700 mb-1">Band Score: 7.5</p>
-            </div>
-      
-            <!-- Testimonial 4 -->
-            <!-- <div class="swiper-slide">
-              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-              
-              <p class="text-gray-900 font-semibold mb-1">Esther Magar</p>
-              <p class="text-gray-700 mb-1">Band Score: 7</p>
-            </div>
-      
-            <!-- Testimonial 5 -->
-             <!--<div class="swiper-slide">
-              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-             
-              <p class="text-gray-900 font-semibold mb-1">Aakash Kunwar</p>
-              <p class="text-gray-700 mb-1">Band Score: 8</p>
-            </div>
-      
-            <!-- Testimonial 6 -->
-             <!--<div class="swiper-slide">
-              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-             
-              <p class="text-gray-900 font-semibold mb-1">Sujit Maharjan</p>
-              <p class="text-gray-700 mb-1">Band Score: 8</p>
-            </div>
-      
-            <!-- Testimonial 7 -->
-             <!--<div class="swiper-slide">
-              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-              
-              <p class="text-gray-900 font-semibold mb-1">Swagat Regmi</p>
-              <p class="text-gray-700 mb-1">Band Score: 7.5</p>
-            </div>
-      
-            <!-- Testimonial 8 -->
-             <!--<div class="swiper-slide">
-              <div class="swiper-slide">
-              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-            
-              <p class="text-gray-900 font-semibold mb-1">Arpan KC</p>
-              <p class="text-gray-700 mb-1">Band Score: 7.5</p>
-            </div>
-      
-            <!-- Testimonial 9 -->
-            <!--<div class="swiper-slide">
-              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-             
-              <p class="text-gray-700 mb-1">Band Score: 7.5</p>
-            </div>
-      
-            <!-- Testimonial 10 -->
-            <!--<div class="swiper-slide">
-              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-             
-              <p class="text-gray-900 font-semibold mb-1">Sajisa Neupane</p>
-              <p class="text-gray-700 mb-1">Band Score: 7.5</p>
-            </div>
-      
-            <!-- Testimonial 11 -->
-           <!-- <div class="swiper-slide">
-              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-             
-              <p class="text-gray-900 font-semibold mb-1">Sarjit Pandey</p>
-              <p class="text-gray-700 mb-1">Band Score: 7.5</p>
-            </div>
-      
-          -->
-        <!--<div class="swiper-slide">
-              <img class="w-50 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="testimonial">
-            
-              <p class="text-gray-900 font-semibold mb-1">Pranil Maharjan</p>
-              <p class="text-gray-700 mb-1">Band Score: 7.5</p>
-            </div>-->
-      
-          </div>
-          <!--Add Pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-      
-</div> 
+       
+
 
     
     
